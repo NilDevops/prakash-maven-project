@@ -1,7 +1,3 @@
 Hi, Welcome to DevOps World!!!
 Thank you :)
-
-this is test of web application deploynet 
-hjbd
-
-wel come to Devops world and explore your knoledge !!!............aslknsa...
+this application deploying on Jboss wildfly server 18.-6 version.
