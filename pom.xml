@@ -188,7 +188,18 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.11</version>
         </plugin>
-
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.11</version>
+            <dependencies>
+                <dependency>
+                  <groupId>junit</groupId>
+                  <artifactId>junit-dep</artifactId>
+                  <version>4.10</version>
+                </dependency>
+            </dependencies>
+        </plugin>
     
 
         <plugin>
@@ -255,18 +266,7 @@
         <scope>test</scope>
       </dependency>
              
-               <dependency>
-                        <groupId>junit</groupId>
-                        <artifactId>junit-dep</artifactId>
-                        <scope>test</scope>
-               </dependency>
-               <dependency>
-                   <groupId>org.apache.maven.plugins</groupId>
-                   <artifactId>maven-surefire-report-plugin</artifactId>
-                   <version>3.0.0-M9</version>
-                   <type>maven-plugin</type>
-              </dependency>
-             
+                    
              
     </dependencies>
   </dependencyManagement>
